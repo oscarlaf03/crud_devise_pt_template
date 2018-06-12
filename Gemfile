@@ -9,6 +9,10 @@ gem 'pg', '~> 0.21'
 gem 'puma'
 gem 'rails', '5.1.6'
 gem 'redis'
+gem "pundit"
+
+gem 'faker'
+
 
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3'
@@ -20,6 +24,7 @@ gem 'webpacker'
 
 group :development do
   gem 'web-console', '>= 3.3.0'
+  gem 'spring-commands-rspec'
 end
 
 group :development, :test do
@@ -28,4 +33,10 @@ group :development, :test do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
+  gem 'launchy'
+  gem 'rspec-rails'
+  gem "factory_bot_rails", "~> 4.0"
 end
